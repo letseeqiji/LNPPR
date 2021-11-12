@@ -1,10 +1,12 @@
-# LinuxNginxPumaPostgreSQLRails  一键安装脚本
+# LNPPR一键安装脚本
 
 #### ==<u>让工作更快更轻松!</u>==
 
 
 
 ## 脚本说明
+
+**LNPPR = Linux + Nginx + Puma + PostgreSQL + Rails**
 
 LNPPR 一键安装脚本是基于配置文件的 Shell 脚本文件.
 
@@ -88,7 +90,7 @@ LNPPR 一键安装脚本是基于配置文件的 Shell 脚本文件.
         ```
 
 - 使用root用户执行脚本:
-    
+  
     - ```shell
         # su root
         # ./install.sh
