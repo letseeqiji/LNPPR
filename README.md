@@ -4,10 +4,15 @@
 
 ## 脚本说明
 **LNPPR = Linux + Nginx + Puma + PostgreSQL + Rails**
+
 LNPPR 一键安装脚本是基于配置文件的 Shell 脚本文件.
+
 它可以快速的帮您搭建 基于linux 平台包含反向代理的的 Rails 服务器.
+
 其中的套件包含不仅包含 :Nodejs + Yarn + Nginx + Ruby + Rails + Sqlite3/MySQL/PostgreSQL + Redis 等等.
+
 你可以通过修改脚本根目录下的 install.conf 文件来控制软件的安装和一系列配置.
+
 然后就是  **一键安装 ~~**
 
 ## 脚本特点
