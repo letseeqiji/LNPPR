@@ -1,0 +1,121 @@
+#! /bin/sh
+# chkconfig: 2345 55 25
+# Description: Startup script for nginx webserver on Debian. Place in /etc/init.d and
+# run 'update-rc.d -f nginx defaults', or use the appropriate command on your
+# distro. For CentOS/Redhat run: 'chkconfig --add nginx'
+
+### BEGIN INIT INFO
+# Provides:          nginx
+# Required-Start:    $all
+# Required-Stop:     $all
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the nginx web server
+# Description:       starts nginx using start-stop-daemon
+### END INIT INFO
+
+# Author:   licess
+# website:  https://lnmp.org
+
+NGINX_BIN='/usr/local/nginx/sbin/nginx'
+CONFIG='/usr/local/nginx/conf/nginx.conf'
+
+case "$1" in
+    start)
+        echo -n "Starting nginx... "
+
+        PID=$(ps -ef | grep "$NGINX_BIN" | grep -v grep | awk '{print $2}')
+        if [ "$PID" != "" ]; then
+            echo "nginx (pid $PID) already running."
+            exit 1
+        fi
+
+        $NGINX_BIN -c $CONFIG
+
+        if [ "$?" != 0 ]; then
+            echo " failed"
+            exit 1
+        else
+            echo " done"
+        fi
+        ;;
+
+    stop)
+        echo -n "Stoping nginx... "
+
+        PID=$(ps -ef | grep "$NGINX_BIN" | grep -v grep | awk '{print $2}')
+        if [ "$PID" = "" ]; then
+            echo "nginx is not running."
+            exit 1
+        fi
+
+        $NGINX_BIN -s stop
+
+        if [ "$?" != 0 ] ; then
+            echo " failed. Use force-quit"
+            $0 force-quit
+        else
+            echo " done"
+        fi
+        ;;
+
+    status)
+        PID=$(ps -ef | grep "$NGINX_BIN" | grep -v grep | awk '{print $2}')
+        if [ "$PID" != "" ]; then
+            echo "nginx (pid $PID) is running..."
+        else
+            echo "nginx is stopped."
+            exit 0
+        fi
+        ;;
+
+    force-quit|kill)
+        echo -n "Terminating nginx... "
+
+        PID=$(ps -ef | grep "$NGINX_BIN" | grep -v grep | awk '{print $2}')
+        if [ "$PID" = "" ]; then
+            echo "nginx is is stopped."
+            exit 1
+        fi
+
+        kill $PID
+
+        if [ "$?" != 0 ]; then
+            echo " failed"
+            exit 1
+        else
+            echo " done"
+        fi
+        ;;
+
+    restart)
+        $0 stop
+        sleep 1
+        $0 start
+        ;;
+
+    reload)
+        echo -n "Reload nginx... "
+
+        PID=$(ps -ef | grep "$NGINX_BIN" | grep -v grep | awk '{print $2}')
+        if [ "$PID" != "" ]; then
+            $NGINX_BIN -s reload
+            echo " done"
+        else
+            echo "nginx is not running, can't reload."
+            exit 1
+        fi
+        ;;
+
+    configtest)
+        echo -n "Test nginx configure files... "
+
+        $NGINX_BIN -t
+        ;;
+
+    *)
+        echo "Usage: $0 {start|stop|restart|reload|status|configtest|force-quit|kill}"
+        exit 1
+        ;;
+
+esac

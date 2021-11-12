@@ -1,0 +1,124 @@
+# == Make Work Faster And Easier | 让工作更快更轻松！ ==
+# welcome
+lang_OS_not_surport="Script does not support current OS, sorry ~"
+lang_OS_only_surport_x64="Scripts are supported only on x64 OS"
+lang_OS_not_surport_WSL="WSL support is not available in the current version, it will be coming soon"
+lang_OS_too_old="The OS version is too old, you can visit the script website to see a list of supported OS"
+lang_script_not_full="The current script file is incomplete. Please download the complete script"
+lang_check_install_app_list="First check the list of App you want to install"
+lang_note="Note"
+lang_change_app_list="If you want to change the list"
+lang_modify_install_config="You can modify the install.conf file in the root directory of the script ~ "
+lang_yarn_need_npm="NPM is not detected in the system. To install YARN, configure to install nodeJS"
+lang_rails_need_ruby="No Ruby was detected on the system. To install Rails, configure to install Ruby"
+lang_memory_not_enougth="The memory space is less than "
+lang_app_can_not_install="can not install"
+lang_disk_not_enougth="The current directory has disk space less than "
+lang_make_may_fail="may make fail"
+
+#normal
+lang_file_not_find="can not find file"
+lang_create_data_dir="create data dir"
+lang_dir_not_find="can not find dir"
+lang_dir_check="Please check that your current directory"
+lang_interface_used_check="Start check whether the port number is occupied"
+lang_used_reconfig="It's taken! Please reconfigure"
+lang_enable_version="Current Supported versions"
+lang_success="Success"
+lang_fail="Failed"
+lang_version_too_old="The app's version is too old"
+lang_version_update="update the app"
+lang_create_success="create success"
+lang_create_fail="create fail"
+
+#start or stop
+lang_start_app="starting"
+lang_start_success="start success"
+lang_start_fail="Failure to start"
+lang_stop_app="stopping"
+lang_stop_success="stop success"
+lang_stop_fail="Failure to stop"
+
+#user
+lang_add_user="add user"
+lang_check_user_exist="check user exist"
+lang_user_exist="user already exists"
+lang_user_start_create="begin create user"
+lang_user_create_success="create user success"
+lang_user_create_fail="create user fail"
+
+# set
+lang_set_remote="set remote"
+lang_set_passwd="set passwd"
+
+# iptables
+lang_add_iptables_rule="add iptebles rule"
+
+# configure
+lang_start_configure="start to configure"
+lang_check_configure_start="Start checking your configuration"
+lang_check_configure_empty_use_default="This configuration item is empty and the default value is used: "
+lang_check_configured_pass="Item test passed"
+lang_reconfig="Please reconfigure"
+lang_all_configure_pass="All configuration items are OK"
+lang_configure_error="The configuration is incorrect. Please check the configuration"
+lang_confighure_success="Configuration is successful"
+lang_confighure_fail="Configuration failed"
+lang_lns_to_bin="start lns to bin"
+lang_ldconfig="ldconfig"
+lang_add_bin_to_path="add bin to path"
+lang_add_init="add init.d file"
+lang_add_systemd_service="add systemd service file"
+lang_add_auto_start="add auto start item"
+
+# install
+lang_install_final_confirm="plaese confirm the apps that will be installed，press Enter to install，press Ctrl+c to cancle"
+lang_should_install_first="first you should install"
+lang_install_start_app="start install "
+lang_uninstall_start="Began to uninstall"
+lang_install_success="Successful installation ~"
+lang_install_error="There was a problem with the installation"
+lang_install_fail="Installation failed ..."
+lang_install_rollback="Roll back the current installation"
+lang_uninstall_success="Uninstall success ~"
+lang_uninstall_fail="Uninstall fail ~ ~"
+lang_installed_already="It's already installed"
+lang_no_need_install="No reinstallation is required"
+lang_install_dependency="Start install dependency"
+lang_dependency_succeeded="Dependent Installation successful"
+lang_dependency_fail="Dependent installation failed"
+lang_install_unlegal="Unsupported installation"
+lang_installed_check="check installed"
+lang_init_data="init data dir"
+lang_init_success="init success"
+lang_init_fail="init fail"
+
+# make
+lang_install_start_configure="start make install configure"
+lang_start_make_install="start make install"
+lang_make_install_success="make install success"
+lang_make_install_fail="make install fail"
+
+# tar
+lang_start_uncompress="Began to unpack"
+
+# download
+lang_download_start="Start the download"
+lang_download_not_found="No file to download was found"
+lang_download_success="download success"
+
+# nodejs
+lang_node_mv_file_error="Error moving file to directory"
+lang_node_lns_error="A soft connection error was generated"
+lang_node_reset_registry_error="Error setting domestic mirror"
+lang_no_node_install="no node installed"
+lang_should_install_node_first="Please install node first"
+
+# yarn
+lang_no_yarn_install="no yarn installed"
+
+# mysql
+lang_mysql_need_new_os="MySQL 8.0 please use latest linux distributions!"
+lang_root_pwd_porrect="MySQL root password correct"
+lang_update_root_pwd="Update root password..."
+lang_reload_privilege="Reload privilege tables..."

@@ -1,0 +1,122 @@
+# == Make Work Faster And Easier | 让工作更快更轻松！ ==
+# welcome
+lang_OS_not_surport="脚本不支持当前系统，抱歉～"
+lang_OS_only_surport_x64="脚本仅支持支持 64 位系统"
+lang_OS_not_surport_WSL="目前版本还不支持 WSL，很快就会来的"
+lang_OS_too_old="当前的系统版本太老了，你可以访问脚本官网查看支持的系统列表"
+lang_script_not_full="当前脚本文件不完整，请下载完整的脚本"
+lang_check_install_app_list="首先请确认您要安装的软件列表"
+lang_note="友情提示"
+lang_change_app_list="若您要修改安装列表"
+lang_modify_install_config="请修改脚本根目录下的 install.conf 文件"
+lang_yarn_need_npm="没有在系统中检测到 npm， 要安装 yarn，请配置安装 nodejs"
+lang_rails_need_ruby="没有在系统中检测到 ruby， 要安装 rails，请配置安装 ruby"
+lang_memory_not_enougth="内存空间不足"
+lang_app_can_not_install="不能安装"
+lang_disk_not_enougth="当前所在的目录可用空间不足"
+lang_make_may_fail="有可能编译失败"
+
+#normal
+lang_file_not_find="没有找到文件"
+lang_create_data_dir="创建data目录"
+lang_dir_not_find="没有找到目录"
+lang_dir_check="请检查您当前的目录是否正确"
+lang_interface_used_check="开始检查端口号是否被占用"
+lang_used_reconfig="已经被占用了! 请重新配置"
+lang_enable_version="目前支持版本"
+lang_success="成功"
+lang_fail="失败"
+lang_version_too_old="软件版本低于软件需求"
+lang_version_update="将升级当前版本"
+lang_create_success="创建成功"
+lang_create_fail="创建失败"
+
+#start or stop
+lang_start_app="正在启动"
+lang_start_success="启动成功"
+lang_start_fail="启动失败"
+lang_stop_app="正在停止"
+lang_stop_success="停止成功"
+lang_stop_fail="停止失败"
+
+#user
+lang_add_user="添加用户"
+lang_user_check_exist="检查用户是否存在"
+lang_user_exist="用户已经存在"
+lang_user_start_create="开始创建用户"
+lang_user_create_success="创建用户成功"
+lang_user_create_fail="创建用户失败"
+
+# set
+lang_set_remote="设置远程登录"
+lang_set_passwd="设置密码"
+
+# iptables
+lang_add_iptables_rule="添加iptebles规则"
+
+# configure
+lang_start_configure="开始配置"
+lang_check_configure_start="开始检测您配置"
+lang_check_configure_empty_use_default="该配置项为空, 默认为您使用: "
+lang_check_configured_pass="该项检测通过"
+lang_reconfig="请重新配置"
+lang_all_configure_pass="所有配置项ok"
+lang_configure_error="配置有问题，请检查配置"
+lang_confighure_success="配置成功"
+lang_confighure_fail="配置失败"
+lang_lns_to_bin="开始创建Bin链接"
+lang_ldconfig="ldconfig"
+lang_add_bin_to_path="将bin目录路径添加到path"
+lang_add_init="添加 init.d 文件"
+lang_add_systemd_service="添加 systemd 服务文件"
+lang_add_auto_start="添加到自动启动项"
+
+# install
+lang_install_final_confirm="请确认以上信息，按 回车 开始安装， 按 ctrl+c 取消安装"
+lang_should_install_first="首先 你要先安装"
+lang_install_start_app="开始安装 "
+lang_uninstall_start="开始卸载 "
+lang_install_success="安装成功 ~"
+lang_install_error="安装遇到问题了"
+lang_install_fail="安装失败 ..."
+lang_install_rollback="回滚当前安装"
+lang_uninstall_success="卸载成功 ~"
+lang_uninstall_fail="卸载失败 ~"
+lang_installed_already="已经安装了"
+lang_no_need_install="不需要重新安装"
+lang_install_dependency="开始安装依赖"
+lang_dependency_succeeded="依赖安装成功"
+lang_dependency_fail="依赖安装失败"
+lang_install_unlegal="不支持的安装"
+lang_installed_check="安装检查"
+
+# make
+lang_install_start_configure="开始安装前配置"
+lang_start_make_install="开始编译安装"
+lang_make_install_success="编译安装成功"
+lang_make_install_fail="编译安装失败"
+
+# tar
+lang_start_uncompress="开始解压"
+
+# download
+lang_download_start="开始下载"
+lang_download_not_found="没有发现要下载的文件"
+lang_download_success="获取文件成功"
+
+# nodejs
+lang_node_mv_file_error="移动文件到安装目录错误"
+lang_node_lns_error="生成软连错误"
+lang_node_reset_registry_error="设置国内镜像错误"
+lang_no_node_install="还没有安装node"
+lang_should_install_node_first="请先安装node"
+
+# yarn
+lang_no_yarn_install="没有安装yarn"
+
+# mysql
+lang_mysql_need_new_os="您的系统版本太老了,要安装MySQL8 请使用更新的系统!"
+lang_root_pwd_porrect="MySQL root 密码正确"
+lang_update_root_pwd="修改root密码..."
+lang_reload_privilege="刷新权限"
+
