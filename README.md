@@ -1,4 +1,4 @@
-# L~inux~N~ginx~P~uma~P~ostgreSQL~R~ails~  ~一键安装脚本~
+# LinuxNginxPumaPostgreSQLRails  一键安装脚本
 
 #### ==<u>让工作更快更轻松!</u>==
 
