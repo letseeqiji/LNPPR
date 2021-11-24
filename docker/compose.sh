@@ -35,11 +35,11 @@ Compose_Lns_To_Bin()
 
 Compose_Add_Instruction()
 {
-	local Compose_Exp='${Compose_Instruction}'
+	local Compose_Exp="${Compose_Instruction}"
 	local Compose_Alias='alias '${Compose_Instruction}'="docker-compose"'
 	Add_Bin_To_Path "${Compose_Exp}" "${Compose_Alias}"
 
-	local Rails_Exp='${Rails_Instruction}'
+	local Rails_Exp="${Rails_Instruction}"
 	local Rails_Alias='alias '${Rails_Instruction}'="[ ! -f docker-compose.yml ] && rails || docker-compose run --rm '${Rails_Service}' rails"'
 	Add_Bin_To_Path "${Rails_Exp}" "${Rails_Alias}"
 
