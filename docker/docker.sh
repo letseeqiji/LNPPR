@@ -24,14 +24,9 @@ Docker_Installed_Check()
     if Check_Command docker;then
         Echo_Green "You have installed $(docker --version)"
         return 0
+    else
+        return 1
     fi
-}
-
-Show_Install_List()
-{
-    Echo_Green "-----------------------------------------------------------------------------"
-
-    Echo_Green "-----------------------------------------------------------------------------"
 }
 
 Docker_Uninstall_Old_Ver()
