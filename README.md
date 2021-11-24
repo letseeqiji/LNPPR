@@ -2,6 +2,8 @@
 
 #### <u>让工作更快更轻松!</u>
 
+--> LNPPR-Docker: https://github.com/letseeqiji/LNPPR/tree/lnppr-docker
+
 ## 脚本说明
 **LNPPR = Linux + Nginx + Puma + PostgreSQL + Rails**
 
