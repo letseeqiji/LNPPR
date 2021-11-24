@@ -41,6 +41,7 @@ lang_stop_fail="Failure to stop"
 
 #user
 lang_add_user="add user"
+lang_add_user_to_group="Add user to group："
 lang_check_user_exist="check user exist"
 lang_user_exist="user already exists"
 lang_user_start_create="begin create user"
@@ -71,6 +72,9 @@ lang_add_init="add init.d file"
 lang_add_systemd_service="add systemd service file"
 lang_add_auto_start="add auto start item"
 
+# gpg
+lang_gpg_get="get gpg resource"
+
 # install
 lang_install_final_confirm="plaese confirm the apps that will be installed，press Enter to install，press Ctrl+c to cancle"
 lang_should_install_first="first you should install"
@@ -80,6 +84,7 @@ lang_install_success="Successful installation ~"
 lang_install_error="There was a problem with the installation"
 lang_install_fail="Installation failed ..."
 lang_install_rollback="Roll back the current installation"
+lang_uninstall_try="Try to unistall "
 lang_uninstall_success="Uninstall success ~"
 lang_uninstall_fail="Uninstall fail ~ ~"
 lang_installed_already="It's already installed"
@@ -107,10 +112,12 @@ lang_download_start="Start the download"
 lang_download_not_found="No file to download was found"
 lang_download_success="download success"
 
+# registry
+lang_reset_registry="reset registry"
+
 # nodejs
 lang_node_mv_file_error="Error moving file to directory"
 lang_node_lns_error="A soft connection error was generated"
-lang_node_reset_registry_error="Error setting domestic mirror"
 lang_no_node_install="no node installed"
 lang_should_install_node_first="Please install node first"
 
@@ -122,3 +129,18 @@ lang_mysql_need_new_os="MySQL 8.0 please use latest linux distributions!"
 lang_root_pwd_porrect="MySQL root password correct"
 lang_update_root_pwd="Update root password..."
 lang_reload_privilege="Reload privilege tables..."
+
+# docker
+lang_welcome_use_docker_helper="Welcome to use Rails helper"
+lang_input_your_choose="Please input your choose"
+lang_create_app="Create App "
+lang_create_app_use_compose="Create App  and use docker-compose"
+lang_exit="Exit"
+lang_input_app_name="Please input app name"
+lang_need_app_name="The app need name"
+lang_stop_create="stop create!"
+lang_input_app_path="Please input App dir"
+lang_default="Default"
+lang_already_exits="already exits"
+lang_use_other="Please use ohters"
+lang_input_unlegal="Unlegal input"

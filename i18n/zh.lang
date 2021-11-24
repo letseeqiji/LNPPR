@@ -41,6 +41,7 @@ lang_stop_fail="停止失败"
 
 #user
 lang_add_user="添加用户"
+lang_add_user_to_group="添加用户到组："
 lang_user_check_exist="检查用户是否存在"
 lang_user_exist="用户已经存在"
 lang_user_start_create="开始创建用户"
@@ -71,6 +72,9 @@ lang_add_init="添加 init.d 文件"
 lang_add_systemd_service="添加 systemd 服务文件"
 lang_add_auto_start="添加到自动启动项"
 
+# gpg
+lang_gpg_get="获取软件源信息"
+
 # install
 lang_install_final_confirm="请确认以上信息，按 回车 开始安装， 按 ctrl+c 取消安装"
 lang_should_install_first="首先 你要先安装"
@@ -80,6 +84,7 @@ lang_install_success="安装成功 ~"
 lang_install_error="安装遇到问题了"
 lang_install_fail="安装失败 ..."
 lang_install_rollback="回滚当前安装"
+lang_uninstall_try="尝试卸载"
 lang_uninstall_success="卸载成功 ~"
 lang_uninstall_fail="卸载失败 ~"
 lang_installed_already="已经安装了"
@@ -104,10 +109,12 @@ lang_download_start="开始下载"
 lang_download_not_found="没有发现要下载的文件"
 lang_download_success="获取文件成功"
 
+# registry
+lang_reset_registry="设置镜像源"
+
 # nodejs
 lang_node_mv_file_error="移动文件到安装目录错误"
 lang_node_lns_error="生成软连错误"
-lang_node_reset_registry_error="设置国内镜像错误"
 lang_no_node_install="还没有安装node"
 lang_should_install_node_first="请先安装node"
 
@@ -120,3 +127,17 @@ lang_root_pwd_porrect="MySQL root 密码正确"
 lang_update_root_pwd="修改root密码..."
 lang_reload_privilege="刷新权限"
 
+# docker
+lang_welcome_use_docker_helper="欢迎使用 Rails 助手"
+lang_input_your_choose="请输入您的选择"
+lang_create_app="创建项目"
+lang_create_app_use_compose="创建项目并使用compose管理"
+lang_exit="退出"
+lang_input_app_name="请输入项目名"
+lang_need_app_name="您没有提供项目名"
+lang_stop_create="停止创建"
+lang_input_app_path="请输入项目路径"
+lang_default="默认"
+lang_already_exits="已经存在"
+lang_use_other="请更换其它"
+lang_input_unlegal="非法输入"

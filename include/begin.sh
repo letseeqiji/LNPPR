@@ -21,8 +21,8 @@ Check_OS_Vsersion()
 		[ "${OS_Version}" -lt '7' ] && return 1
 		;;
 		'Fedora')
-		if [ "${OS_Version}" -lt '32' ];then
-			Echo_Red "Fedora 版本必须高于 32 !"
+		if [ "${OS_Version}" -lt '33' ];then
+			Echo_Red "Fedora 版本必须高于 33 !"
 			return 1
 		fi
 		;;
@@ -191,17 +191,3 @@ Check_Depend_Install()
     return $Ok
 }
 
-Show_Install_List()
-{
-	Echo_Green "-----------------------------------------------------------------------------"
-	[ "${Nodejs_Enable_Install}" = 'y' ] && Echo_Blue "* Node-v${Nodejs_Install_Ver};"
-	[ "${Yarn_Enable_Install}" = 'y' ] && Echo_Blue "* Yarn-v${Yarn_Install_Ver};"
-	[ "${Nginx_Enable_Install}" = 'y' ] && Echo_Blue "* Nginx-v${Nginx_Install_Ver};"
-	[ "${Ruby_Enable_Install}" = 'y' ] && Echo_Blue "* Ruby-v${Ruby_Install_Ver};"
-	[ "${Rails_Enable_Install}" = 'y' ] && Echo_Blue "* Rails-v${Rails_Install_Ver};"
-	[ "${Sqlite3_Enable_Install}" = 'y' ] && Echo_Blue "* Sqlite3-v${Sqlite3_Install_Ver};"
-	[ "${Mysql_Enable_Install}" = 'y' ] && Echo_Blue "* Mysql-v${Mysql_Install_Ver};"
-	[ "${PostgreSQL_Enable_Install}" = 'y' ] && Echo_Blue "* PostgreSQL-v${PgSQL_Install_Ver};"
-	[ "${Redis_Enable_Install}" = 'y' ] && Echo_Blue "* Redis-v${Redis_Install_Ver};"
-	Echo_Green "-----------------------------------------------------------------------------"
-}
