@@ -337,7 +337,7 @@ Add_Bin_To_Path()
     local Export_Path=$2
     local Skip_Sh=("cshrc" "tcshrc")
 
-    [ -z $2 ] &&  Export_Path=$Expr
+    [ -z "$2" ] &&  Export_Path=$Expr
 
     for shrc in `find /home -name ".*shrc"`
     do
