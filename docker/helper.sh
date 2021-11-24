@@ -50,7 +50,7 @@ Docker_Registry_Mirrors()
     ! Check_Dir_Exist /etc/docker && Make_Dir /etc/docker
     StartOrStop stop docker
 
-    if Check_Empty ${Docker_Main_Registry} || Check_Null ${Docker_Main_Registry};then
+    if Check_Empty ${Docker_Main_Registry} || Check_null ${Docker_Main_Registry};then
         Docker_Main_Registry="https://hub-mirror.c.163.com"
     fi
     cat > /etc/docker/daemon.json <<EOF
