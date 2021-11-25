@@ -27,6 +27,7 @@ current_dir=$(pwd)
 . docker/postgres.sh
 . docker/mysql.sh
 . docker/rails.sh
+Get_OS_Info
 
 if [ $(id -u) != "0" ]; then
     Echo_Sad "Error: You must be root to run this script!"

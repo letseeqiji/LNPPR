@@ -72,7 +72,7 @@ EOF
 }
 Docker_Get_Binary()
 {
-    Check_Command wget || apt install -y wget
+    Check_Command wget || ${PM} install -y wget
     Check_File_Exist ${Docker_Binary_Tar} || wget ${Docker_Binary_Download}/${Docker_Binary_Tar}
 }
 Docker_Tar()
