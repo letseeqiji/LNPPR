@@ -19,9 +19,9 @@ Rails_Img_Port=3000
 
 Rails_Install_Depend()
 {
-    Check_Command expect || apt install expect -y
-    Check_Command wget || apt install wget -y
-    Check_Command curl || apt install curl -y
+    Check_Command expect || ${PM} install expect -y
+    Check_Command wget || ${PM} install wget -y
+    Check_Command curl || ${PM} install curl -y
 }
 
 # make ruby+rails image
