@@ -10,33 +10,9 @@
 #
 # Website:  https://bossesin.cn
 # Github:   https://github.com/letseeqiji/LNPPR
-Puma_Check_Instelled()
+Docker_Debian_Remove_Old_Ver()
 {
-	Check_Command puma
-}
-
-Puma_Verstion()
-{
-	puma -v
-}
-
-Puma_Lns_To_Bin()
-{
-    Ln_S ${Ruby_Install_Dir}/${Ruby_Install_Ver}/bin/puma /usr/bin/puma
-}
-
-Puma_Install()
-{
-	if Check_Command ${Ruby_Install_Dir}/${Ruby_Install_Ver}/bin/gem;then
-		${Ruby_Install_Dir}/${Ruby_Install_Ver}/bin/gem install puma
-		if Check_Up;then
-			Puma_Lns_To_Bin
-		fi
-	fi
-}
-
-Puma_Uninstall()
-{
-	Check_Command puma && ${Ruby_Install_Dir}/${Ruby_Install_Ver}/bin/gem uninstall puma
-	Rm_File /usr/bin/puma
+    Check_Command docker && echo "${lang_uninstall_try} docker" && sleep 1 || return 0
+    sudo apt-get remove -y docker docker-engine docker.io containerd runc
+    ! Check_Command docker && Docker_Remove_Lib_Dir
 }

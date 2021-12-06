@@ -10,19 +10,9 @@
 #
 # Website:  https://bossesin.cn
 # Github:   https://github.com/letseeqiji/LNPPR
-Check_Gem()
+Docker_Fedora_Remove_Old_Ver()
 {
-	Check_Command gem
+    Check_Command docker && echo "${lang_uninstall_try} docker" && sleep 1 || return 0
+    sudo dnf remove -y docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine
+    ! Check_Command docker && Docker_Remove_Lib_Dir
 }
-
-
-Show_Gem_Verstion()
-{
-	Check_Command_Version gem
-}
-
-# 
-# Gem_Install()
-# {
-# 	gem install $1 $2
-# }

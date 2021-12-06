@@ -35,6 +35,15 @@ Check_Up()
 {
     Check_Equal "$?" "0"
 }
+Check_Up_OK()
+{
+    if ! Check_Up;then
+        echo "${lang_fail}"
+        return 1
+    else
+        echo "${lang_success}"
+    fi
+}
 Check_Command()
 {
     local C_Command=$1
@@ -138,7 +147,7 @@ Change_Mod()
 Make_Dir()
 {
 	local DirUrl=$1
-    Check_Dir_Exist "${DirUrl}" || mkdir -p "${DirUrl}"
+    Check_Dir_Exist "${DirUrl}" || Check_Command "sudo" && sudo mkdir -p "${DirUrl}" || mkdir -p "${DirUrl}"
 }
 Rm_Dir()
 {
@@ -328,7 +337,7 @@ Add_Bin_To_Path()
     local Export_Path=$2
     local Skip_Sh=("cshrc" "tcshrc")
 
-    [ -z $2 ] &&  Export_Path=$Expr
+    [ -z "$2" ] &&  Export_Path=$Expr
 
     for shrc in `find /home -name ".*shrc"`
     do
